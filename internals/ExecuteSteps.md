@@ -53,3 +53,11 @@ Envelope 启动入口为 EnvelopeMain.class。在 EnvelopeMain.main 中做了必
 
 1. 如果是流处理则调用 runSteaming 启动 steps
 2. 如果是批处理，则调用 runBatch 启动 steps
+
+
+### Streaming 作业执行流程
+
+1. 抽取出无依赖关系的批处理流程 independentNonStreamingSteps，然后通过 runBatch 运行之
+2. 
+
+### Batch 作业启动流程
